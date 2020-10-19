@@ -11,6 +11,8 @@
 		290AF57F253A8AE700693DEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290AF57E253A8AE700693DEC /* ContentView.swift */; };
 		290AF581253A8AE800693DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290AF580253A8AE800693DEC /* Assets.xcassets */; };
 		290AF584253A8AE800693DEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290AF583253A8AE800693DEC /* Preview Assets.xcassets */; };
+		290AF58D253A8B1800693DEC /* PopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290AF58C253A8B1800693DEC /* PopView.swift */; };
+		290AF591253A97FB00693DEC /* UIColor+Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290AF590253A97FB00693DEC /* UIColor+Pop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		290AF580253A8AE800693DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290AF583253A8AE800693DEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		290AF585253A8AE800693DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290AF58C253A8B1800693DEC /* PopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopView.swift; sourceTree = "<group>"; };
+		290AF590253A97FB00693DEC /* UIColor+Pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Pop.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 		290AF57B253A8AE700693DEC /* Pop */ = {
 			isa = PBXGroup;
 			children = (
+				290AF58F253A97EC00693DEC /* Helper */,
 				290AF57C253A8AE700693DEC /* PopApp.swift */,
+				290AF58C253A8B1800693DEC /* PopView.swift */,
 				290AF57E253A8AE700693DEC /* ContentView.swift */,
 				290AF580253A8AE800693DEC /* Assets.xcassets */,
 				290AF585253A8AE800693DEC /* Info.plist */,
@@ -67,6 +73,14 @@
 				290AF583253A8AE800693DEC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		290AF58F253A97EC00693DEC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				290AF590253A97FB00693DEC /* UIColor+Pop.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				290AF57F253A8AE700693DEC /* ContentView.swift in Sources */,
+				290AF58D253A8B1800693DEC /* PopView.swift in Sources */,
 				290AF57D253A8AE700693DEC /* PopApp.swift in Sources */,
+				290AF591253A97FB00693DEC /* UIColor+Pop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

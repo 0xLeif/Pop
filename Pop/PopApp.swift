@@ -11,7 +11,9 @@ import SwiftUI
 struct PopApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }
