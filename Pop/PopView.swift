@@ -13,22 +13,21 @@ struct PopView<Content: View>: View {
     let tint: UIColor
     let content: Content
     
-    init(tint: UIColor, content: () -> Content) {
+    init(
+        tint: UIColor,
+        isPressed: Bool = false,
+        content: () -> Content
+    ) {
         self.tint = tint
         self.content = content()
+        self.isPressed = isPressed
     }
     
     var body: some View {
-        Group {
-//            if isPressed {
-                pressedPop
-//            } else {
-//                normalPop
-//                    .onTapGesture(perform: {
-//                        touchDown()
-//                        touchUp()
-//                })
-//            }
+        if isPressed {
+            pressedPop
+        } else {
+            normalPop
         }
     }
     
@@ -72,16 +71,6 @@ struct PopView<Content: View>: View {
                             .cornerRadius(24)
                     )
             )
-    }
-    
-    private func touchDown() {
-        isPressed = true
-    }
-    
-    private func touchUp() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .pi / 10) {
-            isPressed = false
-        }
     }
 }
 
