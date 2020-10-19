@@ -9,20 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
+        VStack {
             
-                PopView(tint: .brown) {
-                    Text("Hello World!")
-                }
-                .padding()
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                .background(Color(.brown))
+            PopView(tint: .brown) {
+                Text("Hello World!")
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .background(Color(.brown))
             
             
-                PopView(tint: .purple) {
-                    Text("Hello World!")
-                        .padding()
-                }
+            PopView(tint: .systemPurple) {
+                Text("Hello World!")
+                    .padding()
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .background(Color(.systemPurple))
+            
+            PopView(tint: .systemOrange) {
+                Image(systemName: "pencil")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding()
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .background(Color(.systemOrange))
         }
     }
 }

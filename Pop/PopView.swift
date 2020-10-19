@@ -20,20 +20,21 @@ struct PopView<Content: View>: View {
     
     var body: some View {
         Group {
-            if isPressed {
+//            if isPressed {
                 pressedPop
-            } else {
-                normalPop
-                    .onTapGesture(perform: {
-                        touchDown()
-                        touchUp()
-                })
-            }
+//            } else {
+//                normalPop
+//                    .onTapGesture(perform: {
+//                        touchDown()
+//                        touchUp()
+//                })
+//            }
         }
     }
     
     var normalPop: some View {
         content
+            .padding(1)
             .background(
                 Rectangle()
                     .foregroundColor(Color(tint))
