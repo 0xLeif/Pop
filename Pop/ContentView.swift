@@ -9,10 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            PopView(tint: .brown) {
-                Text("Hello World!")
-            }
+        List {
+            
+                PopView(tint: .brown) {
+                    Text("Hello World!")
+                }
+                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                .background(Color(.brown))
+            
+            
+                PopView(tint: .purple) {
+                    Text("Hello World!")
+                        .padding()
+                }
         }
     }
 }

@@ -30,13 +30,10 @@ struct PopView<Content: View>: View {
                 })
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-        .background(Color(tint))
     }
     
     var normalPop: some View {
         content
-            .padding()
             .background(
                 Rectangle()
                     .foregroundColor(Color(tint))
@@ -55,7 +52,6 @@ struct PopView<Content: View>: View {
     
     var pressedPop: some View {
         content
-            .padding()
             .background(
                 LinearGradient(gradient: Gradient(colors: [Color(tint.lighter(._25)), Color(tint.darker(._25))]), startPoint: UnitPoint(x: -4, y: -4), endPoint: UnitPoint(x: 4, y: 4))
                     .cornerRadius(24)
