@@ -1,6 +1,6 @@
 # Pop
 
-A Neumorphic view was a focus on ADA.
+A Neumorphic view with a focus on ADA.
 
 ## Basic Example
 
