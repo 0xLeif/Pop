@@ -27,15 +27,15 @@ struct ContentView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             .background(Color(.systemPurple))
             
-PopView(tint: .systemOrange) {
-    Image(systemName: "pencil")
-        .font(.largeTitle)
-        .foregroundColor(.white)
-        .padding()
-}
-.padding()
-.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-.background(Color(.systemOrange))
+            PopView(tint: .systemOrange) {
+                Image(systemName: "pencil")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding()
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            .background(Color(.systemOrange))
         }
     }
 }
